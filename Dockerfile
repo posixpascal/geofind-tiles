@@ -20,7 +20,7 @@ WORKDIR /tilemill
 RUN git clone https://github.com/tilemill-project/tilemill.git .
 
 RUN apt-get install -y software-properties-common
-RUN add-apt-repository ppa:ubuntu-toolchain-r/test
+#RUN add-apt-repository ppa:ubuntu-toolchain-r/test
 RUN apt-get update -y
 RUN apt-get install -y libstdc++-6-dev libmapnik-dev
 RUN apt-get install -y mapnik-utils node-mapnik g++ protobuf-compiler protobuf-c-compiler libsqlite3-dev \
